@@ -1,0 +1,26 @@
+.header{
+ 
+   
+
+    h1{
+        margin-bottom: 10px;
+        font-weight: 700;
+        color: green;
+    }
+    p{
+        margin-top: 0;
+    }
+}
+.img{
+    margin-top: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 30px;
+}
+
+ion-img{
+    width: 250px;
+    height: 250px;
+
+}

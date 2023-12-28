@@ -1,0 +1,30 @@
+<ion-toolbar style="--background: white;">
+  <ion-buttons>
+    <ion-back-button defaultHref="/register" ></ion-back-button>
+  </ion-buttons>
+  </ion-toolbar> 
+
+
+<ion-content [fullscreen]="true" class="ion-padding">
+ <div class="img">
+  <ion-img
+  src="http://www.pngmart.com/files/7/Groceries-Transparent-Images-PNG.png"
+
+></ion-img>
+ </div>
+ <div class="header">
+<h1>Login</h1>
+<p>Login into account to explore more</p>
+ </div>
+
+ <form>
+
+  <div class="form-field">
+    <ion-icon name="call-outline"></ion-icon>
+    <ion-input placeholder="Phone Number"   [(ngModel)]="mobile1" [ngModelOptions]="{standalone: true}"></ion-input>
+  </div>
+
+ <ion-button expand="block" (click)="getOtp()">Generate OTP</ion-button>
+ <div id="sign-in-button"></div>
+ </form>
+</ion-content>

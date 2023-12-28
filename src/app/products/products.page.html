@@ -1,0 +1,84 @@
+
+  <ion-buttons>
+    <ion-back-button defaultHref="/tabs/tab1" ></ion-back-button>
+  </ion-buttons>
+
+
+<ion-content [fullscreen]="true">
+<!-- <ion-grid style="overflow: hidden; position: fixed; width: 100%;">
+  <ion-row>
+    <ion-col size="6">
+      <ion-skeleton-text animated style="width: 100%;height:200px;"></ion-skeleton-text>
+    </ion-col>
+  </ion-row>
+</ion-grid> -->
+ <div class="category-container">
+  <div class="categories">
+    <div class="category">
+   
+      <img src="https://images.ctfassets.net/yc8ipemhgj36/9iTIPNpZLPmsumAZNlUTW/971f638f44b9fbf1781a0a69327c7af2/module2_products_555x383_SP_202205261404.png?fm=png" alt="Category 1">
+      <p>Laundary & Dishwash</p>
+
+    </div>
+    <div class="category">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.JXTfClH0fSoKkCttPs87qwHaFM&pid=Api&P=0&h=180" alt="Category 2">
+      <p>Biscuits,chips &Namkeens</p>
+    </div>
+    <div class="category">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.SP1TjiMmL2m_JbH8GBMo9wAAAA&pid=Api&P=0&h=180" alt="Category 3">
+      <p>Chocolates & Sweets</p>
+    </div>
+    <div class="category">
+      <img src="https://tse2.mm.bing.net/th?id=OIP.dgXrmv1ajhHu2XpyaW30qQHaHa&pid=Api&P=0&h=180" alt="Category 4">
+      <p>Body & Skin care</p>
+    </div>
+    <div class="category">
+      <img src="https://in.images.search.yahoo.com/images/view;_ylt=AwrPrXemNIllA8UnJyC9HAx.;_ylu=c2VjA3NyBHNsawNpbWcEb2lkAzAzNzg2YjE5MjdhNDk3ZTMwN2FhNjgyODZlZjg0OWY0BGdwb3MDMzUEaXQDYmluZw--?back=https%3A%2F%2Fin.images.search.yahoo.com%2Fsearch%2Fimages%3Fp%3DOil%2B%2526%2BGhee%2Bproduccts%2Bpng%2Bimages%26ei%3DUTF-8%26vm%3Dr%26type%3DE211IN826G0%26fr%3Dmcafee%26fr2%3Dp%253As%252Cv%253Ai%252Cm%253Asb-top%26tab%3Dorganic%26ri%3D35&w=391&h=286&imgurl=www.heritagefoods.in%2Fstatic%2Fimages%2Fdetailslider%2Fghee%2Fspecial-ghee.png&rurl=https%3A%2F%2Fwww.heritagefoods.in%2Fproducts%2Fghee&size=104.5KB&p=Oil+%26+Ghee+produccts+png+images&oid=03786b1927a497e307aa68286ef849f4&fr2=p%3As%2Cv%3Ai%2Cm%3Asb-top&fr=mcafee&tt=Hi+Aroma+%26+Granular+Ghee+%7C+Heritage+Foods&b=0&ni=160&no=35&ts=&vm=r&tab=organic&sigr=lSDqIASzXul2&sigb=DBXAEybVP6KW&sigi=uPamoBdlhfLG&sigt=gJoQCgbheZSk&.crumb=BWzrOVMptcm&fr=mcafee&fr2=p%3As%2Cv%3Ai%2Cm%3Asb-top&type=E211IN826G0&vm=r" alt="Category 5">
+      <p>Oil & Ghee</p>
+    </div>
+    <div class="category">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.kz7lU8hDhz7jxgoY-EmmIQHaHa&pid=Api&P=0&h=180" alt="Category 6">
+      <p>Dry Fruits,Nuts & Seeds</p>
+    </div>
+  </div>
+</div> 
+
+<!-- <div class="category-container">
+  <div class="categories" #categoryList>
+    <ion-card *ngFor="let category of categories" (click)="selectCategory(category)" [class.selected]="selectedCategory === category">
+      <img [src]="category.imageUrl" alt="Category Image">
+      <ion-card-content>
+        <p>{{ category.name }}</p>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</div> -->
+
+<ion-grid >
+  <ion-row>
+    <ion-col size="5.9" class="products" *ngFor="let prod of products" style="border: 1px solid black;margin: 1px;border-radius: 5px;">
+    <img src={{prod.images[0]}} alt="" style="  width: 150px;
+    height: 150px;
+  
+    border-radius:5px; ">
+    <ion-item lines="none">
+    <ion-label>
+      <h2>
+        {{prod.title}}
+      </h2>
+      <p>{{prod.price}}</p>
+      <ion-note>
+        {{prod.brand}}
+      </ion-note>
+    </ion-label>
+    </ion-item>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<!-- <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
+<ion-infinite-scroll-content>
+
+</ion-infinite-scroll-content>
+</ion-infinite-scroll> -->
+</ion-content>

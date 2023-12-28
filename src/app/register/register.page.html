@@ -1,0 +1,36 @@
+<ion-toolbar style="--background: white;">
+  <ion-buttons>
+    <ion-back-button defaultHref="/loginpage" ></ion-back-button>
+  </ion-buttons>
+  </ion-toolbar> 
+
+
+<ion-content [fullscreen]="true" class="ion-padding">
+ <div class="img">
+  <ion-img
+  src="http://www.pngmart.com/files/7/Groceries-Transparent-Images-PNG.png"
+
+></ion-img>
+ </div>
+ <div class="header">
+<h1>Register</h1>
+<p>Create an account to explore more</p>
+ </div>
+
+ <form  [formGroup]="SignupForm">
+  <div class="form-field">
+    <ion-icon name="person-outline"></ion-icon>
+    <ion-input placeholder="FullName"   formControlName="Fullname"></ion-input>
+  </div>
+  <div class="form-field">
+    <ion-icon name="mail-outline"></ion-icon>
+    <ion-input placeholder="Email"  formControlName="Email"></ion-input>
+  </div>
+  <div class="form-field">
+    <ion-icon name="call-outline"></ion-icon>
+    <ion-input placeholder="Phone Number"  formControlName="mobile"></ion-input>
+  </div>
+
+ <ion-button expand="block"    (click)="signupSubmit()">Register</ion-button>
+ </form>
+</ion-content>

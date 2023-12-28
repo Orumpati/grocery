@@ -1,0 +1,57 @@
+<!-- 
+/*-----------------------------------------------------------------------
+Page: otp-page
+Organization:Ro-One
+Author/Developer:Sai krishna
+Description:This class is user / admin can verify the otp and resend the otp 
+
+Change No      Date           Developer              Comments                                    Description
+1.0         19/09/2023         Uma               complete page                           when user/admin can login enter otp & also resend the otp
+
+
+
+                                                                        
+                                                                         
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  -->
+
+
+
+
+
+<ion-toolbar >
+ <ion-buttons>
+    <ion-back-button defaultHref="/loginpage" ></ion-back-button>
+  </ion-buttons> 
+  </ion-toolbar> 
+
+
+<ion-content [fullscreen]="true" class="ion-padding">
+ <div class="img">
+  <ion-img
+  src="https://cdni.iconscout.com/illustration/premium/thumb/otp-verification-5152137-4309037.png"
+
+></ion-img>
+ </div>
+ <div class="header">
+<h1>Enter the OTP</h1>
+<p>Please verify your OTP</p>
+ </div>
+
+ <form>
+
+  <div class="otpboxes" >
+  
+    <ng-otp-input
+    style="background-color: white"
+    #ngOtpInput
+    (onInputChange)="onOtpChange($event)"
+    [config]="config"
+
+  ></ng-otp-input>
+ 
+  </div>
+
+ <ion-button expand="block" (click)="onSubmit()" >Submit OTP</ion-button>
+ <!-- <div id="sign-in-button"></div> -->
+ </form>
+</ion-content>

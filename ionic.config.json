@@ -1,0 +1,7 @@
+{
+  "name": "grocerySSS",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

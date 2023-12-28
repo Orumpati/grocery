@@ -1,0 +1,81 @@
+.product{
+    text-align: center;
+
+// img{
+//     width: 150px;
+//     height: 150px;
+//     border:2px solid #d47676;
+//     border-radius:5px; 
+
+// }
+p{
+    font-size: medium;
+}
+}
+
+.category-container {
+    width: 100%;
+    overflow-x: auto;
+   // white-space: nowrap;
+  }
+  
+  .categories {
+    display: inline-flex;
+
+  }
+  
+  .category {
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    padding: 5px;
+  }
+  
+  .category img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .category  p {
+    margin-top: 1px;
+    font-weight: bold;
+    font-size: 10px;
+  }
+ 
+
+// .category-container {
+//     // white-space: nowrap;
+//     display: flex;
+//     overflow-x: auto;
+//     padding: 10px; /* Adjust padding as needed */
+//   }
+//     .categories {
+//     display: inline-flex;
+
+//   }
+  
+//   ion-card {
+//     flex: 0 0 auto;
+//     margin-right: 10px; /* Adjust margin as needed */
+//     border-radius: 8px;
+//     overflow: hidden;
+//     cursor: pointer;
+//     border: 1px solid transparent; /* Initially transparent border */
+//   }
+  
+//   ion-card.selected {
+//     border-color: blue; /* Border color for selected category */
+//   }
+  
+//   img {
+//     width: 100%;
+//     height: auto;
+//     border-radius: 8px 8px 0 0; /* Rounded corners for the image */
+//   }
+  
+  
